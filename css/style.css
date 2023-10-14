@@ -1,0 +1,1389 @@
+/* ------------------------------------------ */
+/*         General & Basic Styles
+/* ------------------------------------------ */
+
+body,html
+{
+	height:100%
+}
+
+body
+{
+	font-family: "Tajawal-Regular";
+	overflow-x: hidden
+}
+
+.overflowH
+{
+	overflow:hidden
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	margin-top:0;
+	margin-bottom:0
+}
+
+ul
+{
+	margin-bottom:0;
+	padding-right:0;
+	list-style:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+
+p
+{
+	margin-bottom:0
+}
+
+a
+{
+	text-decoration:none!important;
+	outline:none;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+a:hover, a:active, a:focus {
+    outline: 0;
+}
+
+.center-block
+{
+	float:none
+}
+
+.background-cover
+{
+	-webkit-background-size:cover!important;
+	-moz-background-size:cover!important;
+	-o-background-size:cover!important;
+	background-size:cover!important;
+}
+
+input,
+textarea,
+button,
+select
+{
+	outline:none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+.Owl
+{
+    direction:ltr;
+}
+
+.splash
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	text-align:center;
+	padding:0 20px;
+	z-index: 99999
+}
+
+.splash img
+{
+	display:inline-block;
+	margin-top:33vh;
+	max-width:100%;
+}
+
+.titleStyle
+{
+	font-size:50px;
+	font-family: "Tajawal-Bold";
+	color:#000;
+	text-align:center
+}
+
+/* ------------------------------------------ */
+/*         Header
+/* ------------------------------------------ */
+
+.header
+{
+	padding:50px 35px;
+	z-index:999;
+	position: fixed;
+	top:0;
+	right:0;
+	text-align:center;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+
+.header.transform
+{
+    -webkit-transform: translateX(-360px);
+    transform: translateX(-360px);
+}
+
+
+.header.headerFixed
+{
+	padding:0;
+	background-color:#fff;
+	box-shadow: 0px 0 6px 3px rgba(0, 0, 0, 0.08);
+}
+
+.header.headerFixed .openMenu
+{
+	padding: 20px 20px;
+}
+
+.header.headerFixed .openMenu i
+{
+	border-color:#000
+}
+
+.header.headerFixed .openMenu i:after,
+.header.headerFixed .openMenu i:before
+{
+	background-color:#000	
+}
+
+.header .openMenu
+{
+	display:block;
+	cursor: pointer
+}
+
+.header .openMenu i
+{
+	width:37px;
+	height:19px;
+	position: relative;
+	border-top:1px solid #fff;
+	cursor: pointer;
+	display:block
+}
+
+.header .openMenu i:after
+{
+	content:"";
+	position: absolute;
+	right:0;
+	top:8px;
+	width:15px;
+	height:1px;
+	background-color:#fff
+}
+
+.header .openMenu i:before
+{
+	content:"";
+	position: absolute;
+	right:0;
+	bottom:0;
+	width:25px;
+	height:1px;
+	background-color:#fff;
+}
+
+
+.transformPage
+{
+	overflow:hidden;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.transformPage.active
+{
+    -webkit-transform: translateX(-360px);
+    transform: translateX(-360px);
+}
+
+
+.menuMobile
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:99999;
+	left:0;
+	top:0;
+	display:none
+}
+
+.menuMobile .BgClose
+{
+	background-color:rgba(0,0,0,0.4);
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:99;
+	cursor:pointer
+}
+
+.menuMobile .menuContent
+{
+	width:360px;
+	max-width:100%;
+	background-color:#0D183B;
+	position:absolute;
+	top:0;
+	height:100%;
+    overflow: auto;
+	z-index:100;
+	right:-360px;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.menuMobile .menuContent.active
+{
+	right:0
+}
+
+.menuMobile .headMenu
+{
+	padding:30px 35px 40px;
+}
+
+.menuMobile .headMenu .user
+{
+	font-size:25px;
+	padding-right:80px;
+	position: relative;
+	color:#fff;
+	padding-top:15px;
+}
+
+.menuMobile .headMenu .user i
+{
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	background-color:#09D592;
+	font-size:35px;
+	color:#fff;
+	text-align:center;
+	line-height:60px;
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+.menuMobile .menuContent .closeX
+{
+	position: absolute;
+	top:20px;
+	left:20px;
+	font-size:20px;
+	color:#07C99D;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	text-align:center;
+	line-height:25px;
+	padding:0;
+	opacity:1;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-style: normal
+}
+
+.menuMobile .menuContent .closeX i
+{
+	font-size:20px;
+	float:left;
+}
+
+.menuMobile .menuContent .closeX:hover
+{
+	opacity: 1
+}
+
+.menuMobile .menuContent .logoMenu
+{
+	display:block;
+	margin:0 auto;
+	width:150px;
+}
+
+.menuMobile .menuContent .logoMenu img
+{
+	max-width:100%
+}
+
+.menuMobile .menuContent .menuRes li a
+{
+	color:#fff;
+	height:65px;
+	display:block;
+	font-size:20px;
+	padding:0 40px 0 20px;
+	line-height:60px;
+	font-family: "Tajawal-Bold";
+	cursor: pointer
+}
+
+.menuMobile .menuContent .menuRes
+{
+	margin-bottom:30px
+}
+
+.menuMobile .menuContent .menuRes li a i
+{
+	width:30px;
+	float:right;
+	margin-left:15px;
+	text-align:center;
+	color:#fff;
+	font-size:25px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.menuMobile .menuContent .menuFooter
+{
+	text-align:center;
+	padding-bottom:30px;
+	text-align:right;
+	padding:0 40px;
+}
+
+.menuMobile .menuContent .menuFooter a
+{
+	display:inline-block;
+	width:62px;
+}
+
+.menuMobile .menuContent .menuFooter a img
+{
+	max-width:100%;
+}
+
+/* ------------------------------------------ */
+/*         Slide
+/* ------------------------------------------ */
+
+.slide
+{
+	background-color:#041650;
+	padding:65px 0 140px;
+	text-align:center;
+	overflow:hidden;
+	position: relative;
+	z-index:1
+}
+
+.slide .bg
+{
+	position:absolute;
+    bottom: -140px;
+    right: -130px;
+    z-index: -1;
+    width:100%;
+    height:100%;
+    background:url(../images/bgSlide.png) top right no-repeat 
+}
+
+
+.slide .logo
+{
+	display:inline-block;
+	margin-bottom:125px;
+}
+
+.slide .logo img
+{
+	max-width:100%
+}
+
+.slide .title
+{
+	font-size:80px;
+	margin-bottom:30px;
+	color:#fff;
+	font-family: "Tajawal-ExtraBold";
+}
+
+.slide .title span
+{
+	color:#07C99D
+}
+
+.slide .desc
+{
+	font-size:60px;
+	font-family: "Tajawal-ExtraBold";
+	margin-bottom:90px;
+	color:#fff;
+}
+
+.slide .btnSing
+{
+	width:210px;
+	height:65px;
+	border-radius:30px;
+	text-align:center;
+	line-height:65px;
+	font-size:20px;
+	font-family: "Tajawal-ExtraBold";
+	display:block;
+	color:#fff;
+	margin:0 auto;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#008ad4+0,09d592+100 */
+	background: rgb(0,138,212); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(0,138,212,1) 0%, rgba(9,213,146,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(0,138,212,1) 0%,rgba(9,213,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(0,138,212,1) 0%,rgba(9,213,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ad4', endColorstr='#09d592',GradientType=1 ); /* IE6-9 */
+
+}
+
+/* ------------------------------------------ */
+/*         about Us
+/* ------------------------------------------ */
+
+.aboutUs
+{
+	padding:90px 0 100px;
+	text-align:center;
+}
+
+.aboutUs .titleStyle
+{
+	margin-bottom:45px;
+}
+
+.aboutUs .desc
+{
+	line-height:50px;
+	font-size:25px;
+	max-width:1031px;
+	margin:0 auto;
+}
+
+/* ------------------------------------------ */
+/*         projects
+/* ------------------------------------------ */
+
+.projects
+{
+	padding:125px 0 110px;
+	position: relative;
+	z-index:1;
+	min-height:700px;
+}
+
+.projects:before
+{
+    content: "";
+    position: absolute;
+    right: -34px;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    background-color: #F5F8FE;
+    transform: rotate(-183deg);
+    -webkit-transform: rotate(-183deg);
+    -moz-transform: rotate(-183deg);
+    -o-transform: rotate(-183deg);
+    -ms-transform: rotate(-183deg);
+    z-index: -1;
+}
+
+.projects .titleStyle
+{
+	margin-bottom:75px;
+}
+
+.projects .tabsbtns
+{
+	margin-bottom:45px;
+	overflow:hidden;
+	border-radius:50px;
+	background-color:#fff;
+}
+
+.projects .tabsbtns li
+{
+	float:right;
+	cursor: pointer;
+	color:#516175;
+	font-size:20px;
+	padding:20px 0;
+	width: 20%;
+	padding-right:55px;
+	position: relative;
+	z-index:1;
+	direction: ltr
+}
+
+.projects .tabsbtns li span
+{
+	font-size:20px;
+	font-family: "Tajawal-Bold";
+	display:block;
+	margin-bottom:5px;
+}
+
+.projects .tabsbtns li:before
+{
+	content:"";
+	position:absolute;
+	right:0;
+	top:0;
+	width:100%;
+	height:100%;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#008ad4+0,09d592+100 */
+	background: rgb(0,138,212); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(0,138,212,1) 0%, rgba(9,213,146,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(0,138,212,1) 0%,rgba(9,213,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(0,138,212,1) 0%,rgba(9,213,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ad4', endColorstr='#09d592',GradientType=1 ); /* IE6-9 */
+	opacity: 0;
+	z-index:-1;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.projects .tabsbtns li.active:before,
+.projects .tabsbtns li:hover:before
+{
+	opacity: 1
+}
+
+.projects .tabsbtns li.active,
+.projects .tabsbtns li:hover
+{
+	color:#fff;
+}
+
+.projects .tabsProjects .tab:not(:first-of-type)
+{
+	display:none;
+}
+
+.projects .tabsProjects .timeContent
+{
+	text-align:center;
+	float:right;
+	width:20%
+}
+
+.projects .tabsProjects .timeContent .time
+{
+	color:#0093E2;
+	font-size:25px;
+	font-family: "Tajawal-Bold";
+	margin-bottom:10px;
+	display:inline-block
+}
+
+.projects .tabsProjects .timeContent .time i
+{
+	color:#ABB6CC;
+	margin-right:5px;
+}
+
+.projects .tabsProjects .timeContent .desc
+{
+	font-size:20px;
+	font-family: "Tajawal-Medium";
+}
+
+.projects .tabsProjects .timeContent .person
+{
+	margin-top:20px;
+}
+
+.projects .tabsProjects .timeContent .person img
+{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	margin-bottom:10px;
+	display:inline-block
+}
+
+.projects .tabsProjects .timeContent .person .job
+{
+	font-size:20px;
+	font-family: "Tajawal-Medium";
+	margin-bottom:5px;
+	display:block
+}
+
+.projects .tabsProjects .timeContent .person .name
+{
+	font-size:25px;
+	font-family: "Tajawal-Bold";
+}
+
+/* ------------------------------------------ */
+/*         Sing Form
+/* ------------------------------------------ */
+
+.singForm
+{
+	padding:120px 0 85px
+}
+
+.singForm .details
+{
+	padding-top:100px;
+	text-align:center
+}
+
+.singForm .details .titleStyle
+{
+	margin-bottom:55px;
+}
+
+.singForm .details .text
+{
+	font-size:40px;
+	font-family: "Tajawal-Bold";
+	display:block;
+    margin-bottom: -40px;
+    position: relative;
+    z-index:1
+}
+
+.singForm .details .price
+{
+	font-size:150px;
+	color:#08CC99;
+	font-family: "Tajawal-ExtraBold";
+    margin-bottom: -40px;
+    display:block
+}
+
+.singForm .details .text.text2
+{
+	margin-bottom:50px;
+}
+
+.singForm .formStyle
+{
+	border-radius:45px;
+	padding:50px 45px;
+	box-shadow: 0px 0 20px 20px rgba(0, 0, 0, 0.02);
+}
+
+.singForm .formStyle input,
+.selectStyle .textSelect
+{
+	width:100%;
+	height:70px;
+	border-radius: 35px;
+	padding:0 30px;
+	font-size:20px;
+	border:none;
+	background-color:#F5F8FE;
+	margin-bottom:25px;
+	font-family: "Tajawal-Medium";
+}
+
+.singForm .formStyle input::input-placeholder{ /* Chrome/Opera/Safari */
+  color: #3E4A61;
+}
+.singForm .formStyle input::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+  color: #3E4A61;
+}
+.singForm .formStyle input::-moz-placeholder { /* Firefox 19+ */
+  color: #3E4A61;
+}
+
+.singForm .formStyle input:-ms-input-placeholder{ /* IE 10+ */
+  color: #3E4A61;
+}
+
+.singForm .formStyle button
+{
+	width:100%;
+	height:70px;
+	border-radius: 35px;
+	text-align:center;
+	color:#fff;
+	font-family: "Tajawal-Bold";
+	background: rgb(0,138,212); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(0,138,212,1) 0%, rgba(9,213,146,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(0,138,212,1) 0%,rgba(9,213,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(0,138,212,1) 0%,rgba(9,213,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ad4', endColorstr='#09d592',GradientType=1 ); /* IE6-9 */
+	border:none;
+	font-size:20px;
+}
+
+.selectStyle .textSelect
+{
+	line-height:70px;
+	color:#3E4A61
+}
+
+.selectStyle
+{
+	position:relative;
+	cursor: pointer; 
+}
+
+.selectStyle:before
+{
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    top: 18px;
+    left: 35px;
+    font-size: 35px;
+    color: #3E4A61;
+    z-index: 1;
+}
+
+.selectStyle  .listSelect
+{
+	position: absolute;
+	left:0;
+	top:calc(100% + 15px);
+	background-color:#fff;
+	padding:30px 20px;
+	border-radius:10px;
+	z-index:9;
+	display:none;
+	width:200px;
+	box-shadow: 0px 0 10px 5px rgba(0, 0, 0, 0.08);
+}
+
+.selectStyle  .listSelect li
+{
+	padding-right:35px;
+	position: relative;
+	font-size:14px;
+	font-family: "Tajawal-Medium";
+	cursor: pointer
+}
+
+.selectStyle  .listSelect ul li:not(:last-of-type)
+{
+	margin-bottom:25px;
+}
+.selectStyle  .listSelect ul li:before
+{
+	content:"";
+    font: normal normal normal 14px/1 FontAwesome;
+	position:absolute;
+	right:0;
+	top:0;
+	background-color:#F5F7FB;
+	width:20px;
+	height:20px;
+	text-align:center;
+	line-height:20px;
+}
+
+.selectStyle  .listSelect ul li.checked:before
+{
+	content:"\f00c";
+	color:#07C99D;
+}
+
+.singForm .checkDiv
+{
+	text-align:right;
+	padding-left:70px;
+	position: relative;
+	margin-bottom:35px;
+}
+
+.singForm .checkDiv .text
+{
+	color:#000;
+	font-size:18px;
+}
+
+.singForm .checkDiv .text a
+{
+	color:#09D592;
+	text-decoration: underline!important;
+}
+
+.singForm .switch {
+  position: absolute;
+  left:0;
+  top:-3px;
+  display: inline-block;
+  width: 52px;
+  height: 26px;
+  margin-bottom:0;
+}
+
+.singForm .switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.singForm .sliderSwitch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius:15px;
+  background-color: #F5F8FE;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.singForm .sliderSwitch:before {
+    position: absolute;
+    content: "";
+    height: 33px;
+    width: 33px;
+    left: -5px;
+    bottom: -2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.08);
+    transition: .4s;
+    border-radius:50%;
+   -webkit-transform: translateX(26px);
+  	-ms-transform: translateX(26px);
+  	transform: translateX(26px);
+}
+
+.singForm .switch input:checked + .sliderSwitch {
+  background-color: #07C99D;
+}
+
+.singForm .switch input:focus + .sliderSwitch {
+  box-shadow: 0 0 1px #07C99D;
+}
+
+.singForm .switch input:checked + .sliderSwitch:before {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* ------------------------------------------ */
+/*         Modal
+/* ------------------------------------------ */
+
+.modalSing .modal-dialog
+{
+	width:900px;
+}
+
+.modalSing .modal-body
+{
+	padding:110px 80px;
+}
+
+.modalSing .closeX
+{
+	position:absolute;
+	left:35px;
+	top:35px;
+	opacity: 1;
+	font-size:30px; 
+}
+
+.modalSing .title
+{
+	margin-bottom:30px;
+	font-size:50px;
+	font-family: "Tajawal-Bold";
+}
+
+.modalSing  .desc
+{
+	font-size:25px;
+	line-height:50px;
+	font-family: "Tajawal-Medium";
+	margin-bottom:50px;
+}
+
+.modalSing .btnModal
+{
+	width:400px;
+	height:65px;
+	line-height:65px;
+	color:#fff;
+	border-radius:35px;
+	max-width:100%;
+	margin:0 auto;
+	font-size:20px;
+	font-family: "Tajawal-ExtraBold";
+	display:block;
+	background: rgb(0,138,212); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(0,138,212,1) 0%, rgba(9,213,146,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(0,138,212,1) 0%,rgba(9,213,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(0,138,212,1) 0%,rgba(9,213,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ad4', endColorstr='#09d592',GradientType=1 ); /* IE6-9 */
+	text-align:center;
+}
+
+.modalShare .close
+{
+	position: absolute;
+	left:20px;
+	top:15px;
+	opacity: 1
+}
+
+.modalShare .modal-dialog
+{
+	width:300px;
+}
+
+.modalShare .modal-body
+{
+	padding:30px 30px;
+}
+
+.modalShare .title
+{
+	margin-bottom:20px;
+	font-family: "Tajawal-Bold";
+	font-size:20px;
+	color:#07C99D
+}
+
+.modalShare .options li:not(:last-of-type)
+{
+	margin-bottom:15px;
+}
+
+.modalShare .options li a
+{
+	display: block;
+    font-size: 20px;
+    position: relative;
+    color: #000;
+    text-align: left;
+    background: #f7f7f7;
+    border:1px solid #eee;
+    padding: 10px 50px 10px 20px;
+    border-radius: 5px;
+    font-family: "Tajawal-Medium";
+}
+
+.modalShare .options li a i
+{
+    position: absolute;
+    right: 5px;
+    font-size: 22px;
+    width: 40px;
+    text-align: center;
+    top: 14px;
+    color: #48A899;
+}
+
+.modalShare .options li a i.fa-facebook{color:#3b5998}
+.modalShare .options li a i.fa-twitter{color:#1da1f2}
+.modalShare .options li a i.fa-google-plus{color:#ea4335}
+.modalShare .options li a i.fa-whatsapp{color:#25d366}
+.modalShare .options li a i.fa-envelope{color:#000}
+
+
+
+/* ------------------------------------------ */
+/*         Count Div
+/* ------------------------------------------ */
+
+.countDiv
+{
+	background-color:#F5F8FE;
+	padding:75px 0 90px;
+	text-align:center
+}
+
+.countDiv .titleStyle
+{
+	margin-bottom:30px;
+}
+
+.count
+{
+	direction:ltr;
+	display:inline-block;
+	text-align:center
+}
+
+.count .timerDiv
+{
+	float:left;
+	position: relative
+}
+
+.count .timerDiv:not(:last-of-type):before
+{
+    content: ":";
+    position: absolute;
+    right: -70px;
+    color: #000;
+    top: -10px;
+    font-size: 100px;
+}
+
+.count .timerDiv:not(:last-of-type)
+{
+	margin-right:110px;
+}
+
+.count-num {
+  font-size: 100px;
+  font-family: "Tajawal-Bold";
+  position: relative
+}
+.count-date {
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  vertical-align: bottom;
+  text-align:center;
+  position:relative
+}
+
+/* ------------------------------------------ */
+/*         Footer
+/* ------------------------------------------ */
+
+.footer
+{
+	padding:70px 0;
+	background-color:#071A44;
+	text-align:center;
+	position: relative;
+	overflow:hidden;
+	z-index:1
+}
+
+.footer .bg
+{
+	position: absolute;
+	right:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	background:url(../images/bgFooter.png)center center no-repeat;
+}
+
+.footer .logo
+{
+	max-width:100%;
+	display:inline-block;
+	margin-bottom:25px;
+}
+
+.footer .logo img
+{
+	max-width:100%;
+}
+
+.footer .copyrights
+{
+	font-size:20px;
+	color:#7D8392;
+	font-family: "Tajawal-Medium";
+}
+
+.footer .whatsApp
+{
+	position: absolute;
+	bottom:60px;
+	right:115px;
+	display:inline-block
+}
+
+.footer .whatsApp img
+{
+	max-width:100%;
+}
+
+/* ------------------------------------------ */
+/*         BreadCrumb
+/* ------------------------------------------ */
+
+.breadCrumb
+{
+	background-color:#041650;
+	padding:65px 0 140px;
+	text-align:center;
+	overflow:hidden;
+	position: relative;
+	z-index:1
+}
+
+.breadCrumb .bg
+{
+	position:absolute;
+    bottom: -140px;
+    right: -130px;
+    z-index: -1;
+    min-width:1310px;
+    width:100%;
+    height:100%;
+    background:url(../images/bgSlide.png) top right no-repeat
+}
+
+.breadCrumb .logo
+{
+	display:inline-block;
+	margin-bottom:125px;
+}
+
+.breadCrumb .logo img
+{
+	max-width:100%
+}
+
+.breadCrumb .title
+{
+	font-size:30px;
+	color:#fff;
+	margin-bottom:35px;
+	font-family: "Tajawal-Bold";
+}
+
+
+.breadCrumb ul li 
+{
+    display:inline-block;
+    color:#fff;
+    font-size:16px;
+}
+
+.breadCrumb ul li:not(:first-of-type):before
+{
+    content:"/";
+    padding:0 15px;
+    font-size:16px;
+}
+
+.breadCrumb ul li a
+{
+    color:#fff;
+    font-size:16px;
+}
+
+/* ------------------------------------------ */
+/*         Profile
+/* ------------------------------------------ */
+
+.profile
+{
+	padding:110px 0;
+	min-height:600px;
+}
+
+.profile table
+{
+	border-radius:10px;
+	border:1px solid #F2F5FB;
+	min-width:940px;
+	width:100%;
+}
+
+.profile table .headTable
+{
+	background-color:#F2F5FB
+}
+
+.profile table .headTable th
+{
+	padding:20px 15px;
+	text-align:center;
+	font-family: "Tajawal-Bold";
+	color:#000;
+	font-size:25px;
+}
+
+.profile table td
+{
+	padding:20px;
+	text-align:center
+}
+
+.profile table td:not(:last-of-type)
+{
+	border-left:1px solid #F2F5FB
+}
+
+.profile table td .state
+{
+	width:175px;
+	height:55px;
+	line-height:55px;
+	border-radius: 100px;
+	display:block;
+	background-color:#A8F6CF;
+	font-size:20px;
+	font-family: "Tajawal-Medium";
+	margin:0 auto;
+}
+
+.profile table td a
+{
+	display:inline-block;
+	text-align:#008AD4;
+	font-size:20px;
+	text-decoration:underline!important;
+	font-family: "Tajawal-Medium";
+	margin-bottom:20px;
+}
+
+.profile table td img
+{
+	display:block;
+	max-width:100%;
+	margin:0 auto
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,318 @@
+/*Big Size Screens*/
+@media (max-width: 1200px)
+{
+	.slide .title
+	{
+		font-size:60px;
+	}
+	
+	.slide .desc
+	{
+		font-size:45px;
+	}
+	
+	.slide .logo,
+	.slide .desc
+	{
+		margin-bottom:50px;
+	}
+	
+}
+
+/* small Screens & tablets & Smart phone */
+@media (max-width: 991px) 
+{
+		
+	.header.transform {
+	    -webkit-transform: translateX(0);
+	    transform: translateX(0);
+	}
+	.transformPage.active {
+	    -webkit-transform: translateX(0);
+	    transform: translateX(0);
+	}
+	
+	.menuMobile .menuContent .menuRes
+	{
+		margin-bottom:20px;
+	}
+	
+	
+	.slide .desc
+	{
+		font-size:38px
+	}
+	
+	.titleStyle
+	{
+		font-size:30px;
+	}
+	
+	.aboutUs .desc
+	{
+		font-size:17px;
+		line-height:33px;
+	}
+	
+	.projects .tabsbtns li
+	{
+		padding-right:25px
+	}
+	
+	.projects .tabsProjects .timeContent .time
+	{
+		font-size:20px;
+	}
+	
+	.projects .tabsProjects .timeContent .desc
+	{
+		font-size:15px;
+	}
+	
+	.projects .tabsProjects .timeContent .person .name
+	{
+		font-size:18px;
+	}
+	
+	.singForm
+	{
+		padding-top:70px;
+	}
+	
+	.singForm .details
+	{
+		padding-top:0;
+	}
+	
+	.count-num
+	{
+		font-size:50px;
+	}
+	
+	.footer .whatsApp
+	{
+		right:30px;
+	}
+	
+	.modalSing .modal-dialog
+	{
+		width:auto
+	}
+	
+	.modalSing .modal-body
+	{
+		padding:40px 20px;
+	}
+	
+	.modalSing .title
+	{
+		font-size:22px;
+		margin-bottom:20px;
+	}
+	
+	.modalSing .desc
+	{
+		font-size: 16px;
+    	line-height: 33px;
+    	margin-bottom:20px;
+	}
+	
+	.profile
+	{
+		min-height:auto;
+		padding:70px 0;
+	}
+	
+	.profile .scroll
+	{
+		overflow: auto
+	}
+	
+	.breadCrumb
+	{
+		padding-bottom:65px;
+	}
+	
+	.breadCrumb .logo
+	{
+		margin-bottom:80px;
+	}
+	
+}
+
+/* Small Screens */
+@media (min-width: 768px) and (max-width: 991px) 
+{
+	
+	
+}
+
+/* Mobile & Tablets */
+@media (max-width: 767px) 
+{
+	.slide .title
+	{
+		font-size:40px;
+	}
+	.slide .desc
+	{
+		font-size:23px;
+	}
+	
+	.aboutUs,.projects
+	{
+		padding:70px 0
+	}
+	
+	.projects:before
+	{
+		right: -71px;
+	    width: 130%;
+	}
+	
+	.projects .tabsbtns
+	{
+		background:none;
+		border-radius: 0
+	}
+	
+	.projects .tabsbtns li
+	{
+		width:100%;
+		margin-bottom:20px;
+		background-color:#fff
+	}
+	
+	.projects .tabsbtns li
+	{
+		padding-right:50px;
+		border-radius: 50px;
+		overflow:hidden
+	}
+	
+	.projects .tabsProjects .timeContent
+	{
+		padding:20px 15px;
+		margin-bottom:15px;
+		width:100%;
+		background-color:#fff
+	}
+	
+	.footer .whatsApp
+	{
+		bottom:auto;
+		top:30px;
+	}
+	
+	.count-date
+	{
+		font-size:20px;
+	}
+	
+	.count .timerDiv:not(:last-of-type)
+	{
+		margin-right:20px;
+	}
+	
+	.count .timerDiv:not(:last-of-type):before
+	{
+		display:none
+	}
+	
+}
+
+/* Tablets */
+@media (min-width:480px) and (max-width: 767px)
+{
+
+}
+
+/* Mobile */
+@media (max-width: 479px) 
+{
+	
+	.menuMobile .menuContent
+	{
+		width:320px;
+	}
+	
+	.slide
+	{
+		padding:65px 0
+	}
+	
+	.slide .logo
+	{
+		width:150px;
+	}
+	
+	.slide .title
+	{
+		font-size:28px
+	}
+	
+	.slide .desc
+	{
+		font-size:16px;
+	}
+	
+	.titleStyle
+	{
+		font-size:22px;
+	}
+	
+	.projects:before
+	{
+		width:150%;
+	}
+	
+	.singForm .details .titleStyle
+	{
+		margin-bottom:30px;
+	}
+	
+	.singForm .formStyle
+	{
+		padding:30px 20px;
+	}
+	
+	.singForm .checkDiv .text
+	{
+		font-size:14px;
+	}
+	
+	.count-num
+	{
+		font-size:30px;
+	}
+	
+	.footer .logo
+	{
+		width:200px;
+	}
+	
+	.footer .copyrights
+	{
+		font-size:14px;
+	}
+	
+	.footer .whatsApp
+	{
+		position: static;
+		margin-top:20px;
+		width:60px;
+	}
+	
+	.modalShare .modal-dialog
+	{
+		width:auto
+	}
+	
+	.menuMobile .headMenu .user
+	{
+		font-size:20px;
+		padding-top:20px;
+	}
+	
+	
+}
